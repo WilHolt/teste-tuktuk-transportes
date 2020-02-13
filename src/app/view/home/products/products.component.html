@@ -1,0 +1,32 @@
+<section class="newer-products">
+    <div class="p-grid">
+      <div class="p-m-4">
+        <h1>Produtos Cadastrados</h1>
+      </div>
+      <div class="p-m-4 button-container">
+        <p-button icon="fa fa-fw fa-plus"label="Cadastrar Produto" (click)="showDialog()" ></p-button>
+        <p-dialog header="Cadastrar Produto" [(visible)]="display" styleClass="new-product-dialog">
+            Content
+        </p-dialog>
+        
+      </div>
+    </div>
+    <p-table [value]="cars"[paginator]="true" [rows]="5"  selectionMode="multiple" [(selection)]="selectedCars">
+      <ng-template pTemplate="header">
+          <tr>
+              <th *ngFor="let col of cols">
+                  <span *ngIf="col.header === 'Produto'"><input type="checkbox"></span>
+                  <span>{{col.header}}</span>
+              </th>
+          </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-car >
+          <tr [pSelectableRow]="rowData">
+              <td *ngFor="let col of cols">
+                <span *ngIf="col.header === 'Produto'"><input type="checkbox"></span>
+                      {{car[col.field]}}
+              </td>
+          </tr>
+      </ng-template>
+      
+  </p-table>

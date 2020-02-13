@@ -79,6 +79,7 @@ import {AppTopBarComponent} from './app.topbar.component';
 import {AppFooterComponent} from './app.footer.component';
 
 import { HomeComponent } from './view/home/home.component';
+import { ProductsComponent } from './view/home/products/products.component';
 
 @NgModule({
     imports: [
@@ -161,6 +162,7 @@ import { HomeComponent } from './view/home/home.component';
         AppSubMenuComponent,
         AppTopBarComponent,
         AppFooterComponent,
+        ProductsComponent,
 
         HomeComponent
     ],

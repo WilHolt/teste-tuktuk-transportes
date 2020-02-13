@@ -1379,4 +1379,15 @@ table thead {
     padding: 20px;
     border-spacing: 0 !important; }
 
+input[type='checkbox'] {
+  background: #e0e0e0; }
+
+.button-container {
+  padding-top: 15px;
+  padding-left: 20px; }
+
+.new-product-dialog {
+  width: 50vw;
+  height: 20vh; }
+
 /*# sourceMappingURL=layout-blue.css.map */

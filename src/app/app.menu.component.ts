@@ -22,10 +22,10 @@ export class AppMenuComponent implements OnInit, OnDestroy, AfterViewInit {
     ngOnInit() {
         this.model = [
             {label: 'Inicio', icon: 'fa fa-fw fa-home', routerLink: ['/']},
-            {label: 'Produtos', icon: 'fa fa-fw fa-product', routerLink: ['/utils']},
-            {label: 'Estoques', icon: 'fa fa-fw fa-book', routerLink: ['/documentation']},
-            {label: 'Configurações', icon: 'fa fa-fw fa-book', routerLink: ['/documentation']},
-            {label: 'Sair', icon: 'fa fa-fw fa-book', routerLink: ['/documentation']},
+            {label: 'Produtos', icon: 'fa fa-fw fa-cube', routerLink: ['/produtos']},
+            {label: 'Estoques', icon: 'fa fa-fw fa-cubes', routerLink: ['/estoques']},
+            {label: 'Configurações', icon: 'fa fa-fw fa-gear', routerLink: ['/configuracoes']},
+            {label: 'Sair', icon: 'fa fa-fw fa-sign-out', routerLink: ['/sair']},
         ];
     }
 

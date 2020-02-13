@@ -27,11 +27,16 @@
       </div>
     </p-card>
   </div>
-  <div class="p-col">123</div>
+  <div class="p-col"></div>
  
 </section>
 <section class="newer-products">
-  <p-table [value]="cars"[paginator]="true" [rows]="10" [first]="first" selectionMode="multiple" [(selection)]="selectedCars">
+  <div class="p-grid">
+    <div class="p-m-12">
+      <h1>Produtos Adicionados Recentemente</h1>
+    </div>
+  </div>
+  <p-table [value]="cars"[paginator]="true" [rows]="5"  selectionMode="multiple" [(selection)]="selectedCars">
     <ng-template pTemplate="header">
         <tr>
             <th *ngFor="let col of cols">
@@ -50,3 +55,6 @@
     </ng-template>
     
 </p-table>
+<head>
+<script src="https://kit.fontawesome.com/789b5f34ff.js" crossorigin="anonymous"></script>
+  </head>
