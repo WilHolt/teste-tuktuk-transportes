@@ -1,0 +1,10 @@
+<div class="layout-menu-wrapper"  (click)="onWrapperClick($event)">
+        <div class="layout-menu-container">
+            <div class="mobile-search">
+                <i class="fa fa-fw fa-search topbar-search-icon"></i>
+                <input type="text" class="topbar-search" placeholder="Type your search here"/>
+            </div>
+            <ul app-submenu [item]="model" root="true" class="layout-menu" visible="true" [reset]="reset" parentActive="true"></ul>
+        </div>
+</div>
+

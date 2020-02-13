@@ -1,0 +1,20 @@
+/* Add your customizations of layout here */
+
+.ui-card-body{
+
+    height: 120px !important;
+}
+table{
+    thead {
+        background-color: #fff;
+        height: 40px;
+        tr{
+          
+            th{
+                padding:20px;
+                border-spacing: 0 !important;
+            }
+        }
+    }
+  
+}

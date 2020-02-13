@@ -1,0 +1,21 @@
+<div class="topbar">
+    <a routerLink="/" class="topbar-logo">
+        <img [attr.src]="app.layout === 'default' ? 'assets/common/logo-image.svg' : 'assets/layout/images/logo-white.png'" style="border: 0 none">
+    </a>
+
+    <a href="#" id="menu-button" (click)="app.onMenuButtonClick($event)">
+        <i class="fa fa-bars"></i>
+    </a>
+
+    <a href="#" id="user-display" (click)="app.onTopbarMenuButtonClick($event)">
+        <span class="username">Emma Davis</span>
+        <img src="assets/layout/images/avatar.png" style="border: 0px;">
+        <i class="fa fa-angle-down"></i>
+    </a>
+
+    <label for="topbar-search">
+        <i class="fa fa-search topbar-search-icon"></i>
+    </label>
+    <input type="text" class="topbar-search" placeholder="Pequisar Produtos Aqui" id="topbar-search" />
+
+</div>
